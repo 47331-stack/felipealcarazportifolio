@@ -1,0 +1,15 @@
+PORTFÓLIO — FELIPE ALCARAZ
+=========================
+
+Como abrir:
+  Dê dois cliques no arquivo index.html. Ele abre no navegador e funciona
+  sem internet.
+
+Arquivos:
+  index.html  -> a página do site
+  style.css   -> as cores, tamanhos e animações
+  script.js   -> o chat que responde às dúvidas e o botão de contato
+  assets/     -> as imagens (logo, botões, foto e logos de IA)
+
+Contato:
+  O botão "contato" abre o WhatsApp no número +55 (19) 99860-54766.

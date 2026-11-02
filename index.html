@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Felipe Alcaraz — Portfólio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500&family=Nunito:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="viewport">
+    <div class="track" id="track">
+
+      <!-- 1. Início -->
+      <section class="slide slide-intro">
+        <img class="intro-logo" src="assets/logo-felipe.png" alt="Felipe Alcaraz" />
+        <button class="img-btn btn-comecar" data-next aria-label="Começar">
+          <img src="assets/btn-comecar.png" alt="começar" />
+        </button>
+      </section>
+
+      <!-- 2. Sobre mim -->
+      <section class="slide slide-about">
+        <h1 class="about-title">Meu nome é Felipe,<br />tenho 17 anos e sou apaixonado por tecnologia.</h1>
+        <div class="ai-logos">
+          <img class="logo-claude" src="assets/logo-claude.png" alt="Claude" />
+          <img class="logo-gpt" src="assets/logo-chatgpt.webp" alt="ChatGPT" />
+        </div>
+        <img class="about-photo" src="assets/foto-felipe.png" alt="Foto de Felipe" />
+        <div class="about-card">Estou cursando TI no segundo ano do Ensino Médio, no Colégio Raphael Di Santo.</div>
+        <button class="arrow-btn" data-next aria-label="Próximo">&gt;</button>
+      </section>
+
+      <!-- 3. Futuro -->
+      <section class="slide slide-future">
+        <h2 class="future-text">Olhando sempre para<br />o<br /><span class="future-word">Futuro...</span></h2>
+        <button class="arrow-btn" data-next aria-label="Próximo">&gt;</button>
+      </section>
+
+      <!-- 4. Chat -->
+      <section class="slide slide-chat">
+        <button class="img-btn pill-btn top-left" id="btnInicio" aria-label="Início">
+          <img src="assets/btn-inicio.png" alt="inicio" />
+        </button>
+        <button class="img-btn pill-btn top-right" id="btnContato" aria-label="Contato">
+          <img src="assets/btn-contato.png" alt="contato" />
+        </button>
+        <img class="chat-title" src="assets/titulo-duvidas.png" alt="Escreva suas dúvidas" />
+        <div class="messages" id="messages"></div>
+        <form class="composer" id="composer">
+          <input id="question" type="text" placeholder="O que quer saber sobre mim?" autocomplete="off" />
+          <button class="img-btn send-btn" type="submit" aria-label="Enviar">
+            <img src="assets/btn-enviar.png" alt="enviar" />
+          </button>
+        </form>
+      </section>
+
+    </div>
+  </div>
+
+  <!-- Vidro fosco: o aviso fica sobre o chat e se dissolve ao clicar em começar -->
+  <div class="veil" id="veil" aria-hidden="true">
+    <div class="notice-card">
+      <p>Agora, um momento para você tirar suas dúvidas de maneira mais prática.</p>
+      <p>Suas dúvidas sobre mim serão respondidas de forma automática. Vamos lá?</p>
+      <button class="img-btn btn-comecar" id="btnVeil" aria-label="Começar">
+        <img src="assets/btn-comecar.png" alt="começar" />
+      </button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
